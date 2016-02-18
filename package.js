@@ -1,5 +1,5 @@
 Package.describe({
-  name: 'test-reporter-helpers',
+  name: 'tmeasday:test-reporter-helpers',
   version: '0.0.1',
   summary: 'Some helpers to make writing test reporters easier',
   git: 'https://github.com/tmeasday/test-reporter-helpers.git',
