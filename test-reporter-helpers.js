@@ -1,7 +1,13 @@
-// Run this function *before* injecting your test reporter HTML to the DOM.
-// It simply hides all existing DOM elements without removing them
-export const hideApp = () => {
-  $('body > *').css({display: 'none'});
+// Run this function to hide all children of the body that do not match `nonHiddenChild`
+// e.g. hideApp('.mocha-wrapper')
+export const hideApp = (nonHiddenChild) => {
+  $('head').append(
+  `<style>
+    body > *:not(${nonHiddenChild}) {
+      display: none;
+    }
+  </style>`);
+
   document.head.title = "Tests";
 }
 
