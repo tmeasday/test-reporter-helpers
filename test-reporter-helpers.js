@@ -1,3 +1,6 @@
+import { _ } from 'meteor/underscore';
+import { $ } from 'meteor/jquery';
+
 // Run this function to hide all children of the body that do not match `nonHiddenChild`
 // e.g. hideApp('.mocha-wrapper')
 export const hideApp = (nonHiddenChild) => {
